@@ -13,3 +13,10 @@ The folowing images are initaly description of the aplication system, it was wri
 the folowing image is initial interface of the dekstop app!
 
 ![pokazivac](https://github.com/marko1997221/DidacticRadar/assets/61901835/6e428208-964f-4693-9737-569e85146faf)
+
+Radar detections! 
+![СТАЛНИОДРАЗИ](https://github.com/marko1997221/DidacticRadar/assets/61901835/b87899bc-e79a-4f76-ac9e-c9a83820188c)
+
+Described legend.
+![KonacnoAplikacija@4x](https://github.com/marko1997221/DidacticRadar/assets/61901835/ff552f3f-d408-42bd-8ce9-403996322d89)
+
