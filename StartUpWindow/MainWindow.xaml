@@ -1,0 +1,32 @@
+﻿<Window x:Class="StartUpWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StartUpWindow"
+        mc:Ignorable="d" Name="GlavniProzor"
+         Title="Mod rada" Height="1000" Width="1024" Loaded="Window_Loaded" ResizeMode="NoResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" WindowStyle="None"   >
+    <Grid Name="GlavniGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="groupBox" Grid.Row="1" Header="Odaberite mod rada" HorizontalAlignment="Center"  Margin="10"  Width="750" VerticalAlignment="Top"   FontSize="30">
+            <StackPanel Margin="10" HorizontalAlignment="Center">
+                <RadioButton Name="Mod256"   FontSize="40" Margin="0,5,0,5" Content="Maskimalna daljina 11 520 metara "   FontWeight="UltraBold" VerticalContentAlignment="Center" Checked="Mod256_Checked"   ></RadioButton>
+                <TextBlock  Text="Opis procesa:" FontSize="30" FontWeight="SemiBold" FontStyle="Italic"></TextBlock>
+                <TextBlock  TextWrapping="Wrap" Margin="5,0,0,0" FontStyle="Oblique" FontSize="20" ><Run Text="A"/><Run Text="utomatski otkriva pokrеtnе ciljеvе na udaljеnosti do 11.52 kilomеtara."/><LineBreak/><Run Text="-Moze otkrivati pe"/><Run Text="šaka na 6km"/><LineBreak/><Run Text="-"/><Run Text="Čoveka koji puzi na 2 km"/><LineBreak/><Run Text="-"/><Run Text="Vozilo veličine d"/><Run Text="ži"/><Run Text="pa na 11 km"/><LineBreak/><Run Text="-Helikopter na 9 km"/><LineBreak/><Run Text="-Dronove na 11,5 km"/></TextBlock>
+                <RadioButton  Name="Mod512" Margin="0,10,0,5"  Content="Maskimalna daljina 23 040 metara " FontSize="40" FontWeight="UltraBold" VerticalContentAlignment="Center" Checked="Mod512_Checked" ></RadioButton>
+                <TextBlock   FontSize="30" Text="Opis procesa:" FontWeight="SemiBold" FontStyle="Italic" ></TextBlock>
+                <TextBlock FontSize="20" Margin="5,0,0,0"  TextWrapping="Wrap" FontStyle="Oblique"><Run Text="A"/><Run Text="utomatski otkriva pokrеtnе ciljеvе na udaljеnosti do 23.04 kilomеtara."/><LineBreak/><Run Text="-Moze otkrivati pe"/><Run Text="šaka na 6km"/><LineBreak/><Run Text="-"/><Run Text="Čoveka koji puzi na 2 km"/><LineBreak/><Run Text="-"/><Run Text="Vozilo veličine d"/><Run Text="ž"/><Run Text="ipa na 11 km"/><LineBreak/><Run Text="-Helikopter na "/><Run Text="15"/><Run Text=" km"/><LineBreak/><Run Text="-Dronove na "/><Run Text="23 "/><Run Text="km"/><LineBreak/><Run Text="-Tenkove na 20 km"/></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Height="50" Margin="10" VerticalAlignment="Bottom" Width="250">
+            <Button Width="250" Content="ZAPOCNI RAD" FontFamily="TimesNewRoman" FontStyle="Italic" FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Center" Click="Button_Click" ></Button>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <!--Project was exported from assembly: D:\E 2023-10-29 16;51;32\VojnaAkademija\DiplomskiRadovi\MojDiplomski\Diplomski7\SolutinoMarkoFinal\Radar512\bin\Debug\BibliotekaApp.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1A7259A-BB5E-42FB-8B21-42A4A79F3B1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BibliotekaApp</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>BibliotekaApp</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpFFTW">
+      <HintPath>lib\SharpFFTW.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Konverzije.cs" />
+    <Compile Include="PrijemPodataka.cs" />
+    <Compile Include="RadarControlMessages.cs" />
+    <Compile Include="RenderMenagemenThreadGrafik_VremenskaBaza.cs" />
+    <Compile Include="FFTLibrary\Direction.cs" />
+    <Compile Include="FFTLibrary\Options.cs" />
+    <Compile Include="FFTLibrary\FromFFTW.cs" />
+    <Compile Include="FFTLibrary\KlasaPlanFFT.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
